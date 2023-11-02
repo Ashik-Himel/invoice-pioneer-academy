@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro-Semibold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro-Bold.otf");
+  font-weight: 700;
+}
+:root {
+  --primary-color: #007bff;
+  --primary-color-hover: #0069d9;
+  --success-color: #28a745;
+  --success-color-hover: #218838;
+  --danger-color: #dc3545;
+  --danger-color-hover: #c82333;
+  --gray-color: #6c757d;
+  --body-bg: #f4f6f9;
+  --text-color: #212529;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+}
+input, select {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0 0 transparent;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+input:focus, select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: inset 0 0 0 transparent;
+}
+.button-primary {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  padding: 0.375rem 0.75rem;
+  text-decoration: none;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.button-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+main {
+  padding-block: 2rem;
+}
+p {
+  margin-bottom: 3px;
+}
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.flex-between {
+  display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 2rem;
+}
+.flex-between > *:last-child {
+  text-align: right;
+}
+.half-width {
+  width: 50%;
+  margin-left: auto;
+}
+.font-bold {
+  font-weight: 700;
+}
+.mb-2 {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.mb-4 {
+  display: block;
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+
+.bill-to {
+  margin-top: 1.5rem;
+}
+.bill-to > p:last-child {
+  margin-bottom: 1.5rem;
+}
+.bill-to h3 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.signature {
+  margin-top: 4rem;
+  display: inline-block;
+  padding-inline: 2rem;
+  border-top: 1px solid black;
+}
